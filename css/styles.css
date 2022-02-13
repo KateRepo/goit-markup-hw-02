@@ -20,6 +20,7 @@ body {
   font-size: 14px;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
 }
 
 /* Сброс маркеров списка*/
@@ -53,7 +54,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--accent-color);
 }
 
@@ -62,7 +63,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--logo-black);
 }
 
@@ -71,7 +72,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
+  text-decoration: none;
   color: var(--primary-background-color);
 }
 
@@ -82,6 +83,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -93,14 +95,19 @@ ul {
   color: var(--accent-color);
 }
 
-.auth-list {
+.auth-mail,
+.auth-tel {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
-.auth-list:hover,
-.auth-list:focus {
+.auth-mail,
+.auth-tel:hover,
+.auth-mail,
+.auth-tel:focus {
   color: var(--accent-color);
 }
 
@@ -119,6 +126,7 @@ ul {
 }
 
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -139,15 +147,12 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.14;
-  letter-spacing: 0.3em;
   text-align: left;
   color: var(--title-text-color);
 }
 
 .feature-text {
-  font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.3em;
   text-align: left;
 }
 
@@ -156,7 +161,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.3em;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -171,33 +175,29 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.3em;
   text-align: center;
   color: var(--title-text-color);
 }
 
-.team-header {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.3em;
   color: var(--title-text-color);
 }
 
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.3em;
 }
 
 /* Секция Герой Портфолио*/
 
 .filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.3em;
   cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--grey-background-color);
@@ -209,18 +209,22 @@ ul {
   background-color: var(--accent-color);
 }
 
+.portfolio-link {
+  text-decoration: none;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.3em;
+  color: var(--primary-text-color);
 }
 
 /* Подвал сайта*/
@@ -230,20 +234,18 @@ ul {
 
 .footer-location {
   line-height: 1.71;
-  font-weight: 400;
   font-style: normal;
   text-align: left;
-  letter-spacing: 0.3em;
+  text-decoration: none;
   color: var(--primary-background-color);
 }
 
 .footer-mail,
 .footer-tel {
   line-height: 1.71;
-  font-weight: 400;
   font-style: normal;
   text-align: left;
-  letter-spacing: 0.3em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
